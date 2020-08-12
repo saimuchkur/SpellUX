@@ -5,7 +5,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <script>
+        $(document).ready(function () {
+            $("#buttontest").click(function () {
+                $(".all").hide("fast");
+                if ($('#full_day').val().toLocaleLowerCase() == "pleaseletmein") {
+                    $("#pleaseletmein").show("fast");
+                } else if ($('#full_day').val().toLocaleLowerCase() == "no") {
+                    $("#no").show("fast");
+                } else {
+                    $("#incorrect").show("500");
+                }
+            });
+            $("#full_day").change(function () {
+                $("#incorrect").hide("500");
+            });
+        });
+    </script>
 <style>
+   #pleaseletmein {
+            display: none;
+        }
+
+        #no {
+            display: none;
+        }
+
+        #incorrect {
+            display: none;
+        }
 body,h1 {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
 .bgimg {
@@ -22,7 +52,20 @@ body, html {height: 100%}
     Logo
   </div>
   <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
+    <h1 class="w3-jumbo w3-animate-top">
+     <p>Please enter the code.</p>
+    <input type='text' id="full_day" />
+    <input type='button' id="buttontest" value="Submit" />
+    <div class="all" id="pleaseletmein">
+        Welcome
+    </div>
+    <div class="all" id="no">
+        Also correct!
+    </div>
+    <div class="all" id="incorrect">
+        Sorry, Try again!
+    </div>
+    </h1>
     <hr class="w3-border-grey" style="margin:auto;width:40%">
     <p class="w3-large w3-center">35 days left</p>
   </div>
