@@ -1,78 +1,83 @@
 <!DOCTYPE html>
-<html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <meta charset="utf-8" />
-    <script>
-        $(document).ready(function () {
-            $("#buttontest").click(function () {
-                $(".all").hide("fast");
-                if ($('#full_day').val().toLocaleLowerCase() == "pleaseletmein") {
-                    $("#pleaseletmein").show("fast");
-                } else if ($('#full_day').val().toLocaleLowerCase() == "no") {
-                    $("#no").show("fast");
-                } else {
-                    $("#incorrect").show("500");
-                }
-            });
-            $("#full_day").change(function () {
-                $("#incorrect").hide("500");
-            });
-        });
+<html >
+<head>
+    <meta charset="utf-8">
+    
+      <title>Prospect Reveal - UXPin Preview</title>
+    
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="robots" content="noindex">
+
+    <link rel="apple-touch-icon" href="data/preview.uxpincdn.com_img_ios-logo-180x180-4f260175.png">
+    <link rel="icon" type="image/png" href="data/preview.uxpincdn.com_img_favicon-2d194bee.ico">
+    <link rel="icon" sizes="180x180" href="data/preview.uxpincdn.com_img_ios-logo-180x180-4f260175.png">
+    <link rel="shortcut icon" href="data/preview.uxpincdn.com_img_favicon-2d194bee.ico">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    
+
+    <link rel="stylesheet" href="data/preview.uxpincdn.com_styles_preview-b97ab9a2.css">
+    
+
+    
+    <!-- auto-generated on export -->
+    <link rel="stylesheet" href="data/fonts.css">
+
+    
+</head>
+
+
+<body ng-controller="HomeController"
+      class="loading" ng-class="{
+        'loading' : isLoading,
+        'left-panel-active' : isPanelVisible(PREVIEW_PANELS.SITEMAP),
+        'sitemap-visible' : isPanelVisible(PREVIEW_PANELS.SITEMAP),
+        
+        'documentation-visible right-panel-wide': isModeActive(PREVIEW_MODES.DOCUMENTATION),
+        'feature-documentation': canShowDocumentationMode,
+        'right-panel-active': rightPanelVisible || isModeActive(PREVIEW_MODES.SPEC) || isModeActive(PREVIEW_MODES.DOCUMENTATION),
+        
+      }"
+      ng-keydown="keyDown($event)">
+    
+    <div ui-view="topBar"></div>
+
+    <div ui-view></div>
+    <div ui-view="sitemap"></div>
+    <div ui-view="documentation"></div>
+    <div ui-view="canvas"></div>
+    <div ui-view="overlay"></div>
+    <div class="loader"></div>
+
+
+    <script type="text/javascript">
+    window.ApplicationConfiguration = {
+            awsLambdaExternalRequestUrl: 'https://rvwdyphcfb.execute-api.us-west-1.amazonaws.com/staging/external_request',
+            project:{"id_project":8396627,"custom_font_css_url":"https://api.uxpin.com/fonts/custom/css/file?id=892623","created_at":"2019-10-31T16:39:53Z","custom_fonts_url":"https://api.uxpin.com/fonts/custom/css/?id=892623","features":{"live_share":true,"user_testing":false,"password":true,"team_comments":true,"spec_mode":true,"spec_mode_no_login":true,"spec_mode_styleguide":true,"comments_assignment":true,"design_views":false,"docs":true,"km_track":true,"merge":false},"hash":"230021a7a4472d496f3fbb7334e917edf3591b3a","id_account":892623,"is_account_active":true,"is_account_parked":false,"is_account_free":false,"id_collection":2184232,"collection_type":"","collection_status":0,"id_original_project":null,"iteration_name":"","iteration_number":null,"name":"Prospect Reveal","settings":{"grid":{"fixed_width_for_breakpoints":true,"resp0":{"cols_count":24,"col_width":59,"grid_on_top":true,"col_spacing":20,"fixed_width":true,"margin":20,"enabled":false,"width":1916}},"deviceFrame":{"resp0":{"isEnabled":true,"isHiddenScrollbar":true,"isHorizontal":true,"name":"TV","color":"Space Grey","fileName":"apple-tv-horizontal.png"}},"gridMigrated":{"120057515":true,"120061044":true,"120064415":true,"120079398":true,"121828301":true,"121828312":true,"121828428":true,"121859157":true,"121859158":true,"121992468":true,"122019019":true,"122019766":true,"122019767":true,"122019773":true,"122019780":true,"122953405":true,"122957628":true,"122957630":true,"122993945":true,"122993946":true,"122993952":true,"122993954":true,"122993955":true,"123036802":true,"123075324":true,"123119578":true}},"type":"W","updated_at":"2021-01-31T13:36:41Z","variables":{}},
+            userData:{"is_trial":false,"is_anonymous":true,"is_owner":false},
+            mode: 'export',
+            menuEnabled:true,
+            modeMenuEnabled:true,
+        };
+         window._rollbarConfig = {};
+         window._rollbarInitialized = true;
     </script>
-<style>
-   #pleaseletmein {
-            display: none;
-        }
 
-        #no {
-            display: none;
-        }
-
-        #incorrect {
-            display: none;
-        }
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  background-image: url('IMG_2230.jpeg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
-</style>
-<body>
-
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    Spell UX
-  </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">
-     <p>Please enter the code.</p>
-   
-    </h1>
-    <!-- <hr class="w3-border-grey" style="margin:auto;width:40%"> -->
-    <input type='text' id="full_day" />
-    <input type='button' id="buttontest" value="Submit" />
-    <div class="all" id="pleaseletmein">
-        Welcome
-    </div>
-    <div class="all" id="no">
-        Also correct!
-    </div>
-    <div class="all" id="incorrect">
-        Sorry, Try again!
-    </div>
-  </div>
-  <div class="w3-display-bottomleft w3-padding-large">
-    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
-  </div>
-</div>
+    
+        <script type="text/javascript" src="data/preview.uxpincdn.com_scripts_engine-3e7d12ef.js"></script>
+        <script type="text/javascript" src="data/preview.uxpincdn.com_scripts_vendors-5b712bbd.js"></script>
+        <script type="text/javascript" src="data/preview.uxpincdn.com_scripts_app-7092775a.js"></script>
+        
+    
 
 </body>
+
+
 </html>
