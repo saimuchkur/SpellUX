@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Freelancer - Start Bootstrap Theme</title>
+    <title>Sai Shekar Portfolio</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
@@ -49,6 +49,7 @@
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">Spell UX</a>
+            
             <button
                 class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
                 type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
@@ -78,11 +79,15 @@
             <!-- Icon Divider-->
             <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-icon"><a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/sai-s-37883835/" target="_blank"><i
+                    class="fab fa-fw fa-linkedin-in"></i></a></div>
                 <div class="divider-custom-line"></div>
             </div>
             <!-- Masthead Subheading-->
-            <p class="masthead-subheading font-weight-light mb-0">UX Engineer - UI Developer - Product Designer</p>
+            <p class="masthead-subheading font-weight-light mb-0">UX Engineer - UI Developer - Product Designer</p><br>
+            <p>Build the right thing and, build the thing right.</p>
+            <p>UX Engineering = Building <code>Useful + Usable + Desirable</code> concepts</p>           
+
         </div>
     </header>
     <!-- Portfolio Section-->
@@ -298,6 +303,7 @@
                 <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
+            UX Engineering 
             <!-- <div class="row">
                 <h3></h3>
                 <p class="lead">
@@ -538,10 +544,49 @@
                                 </div>
 
                                 <p class="mb-5">
-                                <h3>UX Workflow - Enhanced or Ideal Version</h3>
+                                <h3>User Journey</h3>
+                                <div data-toggle="collapse" data-target="#demo" style="color: #1590e3; cursor: pointer;">I would like to know more about it</div>
                                 <!-- <h6>Enhanced or ideal version</h6> -->
-                                Provide detailed analytics for different templates, choose multiple lists of people,
-                                start or schedule campaigns, etc.
+                                <!-- <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">I would like to know more about it</button> -->
+  <div id="demo" class="collapse">
+<b>Step 1:</b><br>
+As a user, on an outbound email I would like to use a Salesforce template which should be available through my Zynbit sidebar and when consumed should be populated to my email compose window with the subject and ready to send mode.<br>
+<b>Step 2:</b><br>
+Once my sidebar is loaded with all the recipients from the email, I choose a template.<br>
+1.	The user should be able to see five templates on the dropdown, with an option to view all.
+*The most recent used template should be the default selected template for the next use.<br>
+<code>Condition 1:</code> If the selected email doesn't have any required related objects or variable tags to be selected, we populate the template on to the compose window and the user should be able to send the consumed template right away <br>
+<code>Condition 2:</code> If the selected template has related objects associated that need to be filled in, we load the primary recipient dropdown and related objects lookup. <br>
+<b>Step 3:</b><br> if step 2, condition 2<br> 
+Select the primary recipient from the dropdown (has all the recipients, both known and unknown listed) to whom the variable tags on the template will be applied to.<br>
+<b>Step 4:</b><br> if step 2 , condition2<br> 
+Select template → Show the related object fields that are related to the selected template (there can be multiple related object fields for a template) → Provide a lookup for the related object (For example Account, lookup accounts in SF - *not a required field, but if selected apply that to the template- like if zynbit is selected apply that account name to the template where possible ) -combo box search with typeahead.
+<b>Step 5:</b><br> if step 2, condition 2<br> 
+Once the primary contact from the recipients list (first contact on the recipient list on the email should be preselected by default) and the template is selected, click on apply button to publish the template to the compose window on the respected email client.
+Note: All the variable tags should be pre-filled where applicable.<br>
+1.	Known contact - if we already have that contact on SF, we should be able to get all the info about that contact and apply it to the variable tags where applicable.<br>
+2.	Unknown contact - Pre-populate will all the fields that are available with us like, the First name, last name, email etc…<br>
+3.	When we copy over the template to the compose window, places where we are not able to populate the variable tags add the variable tag syntax that comes from SF like {{{First_Name}}}<br>
+Example : Hi, Sai Muchkur (when we can populate the variable tag) 
+else Hi, {{{First_Name}}} so that the users attention would be grabbed to that part of the template and can fill in manually. - 
+good to have - make the variable tag bold
+4.	Show a banner as shown in the uxpin prototype to tell the user that there might be few variable tags that should be filled in before they send the email - this is just a visual reminder kind of a thing that helps the user in not sending the email before filling in the not populated variable tags.<br>
+<b>Step 6:</b><br>
+Check the email options to track the email or links before we push the template.
+*Condition: If there is a link inserted on the template, open the click links text field to name the link before pushing the template to the compose window.
+*I should be able to edit the compose window (modify the link) and then use the sidebar to refresh and name the link or make any changes to the email options.<br>
+<b>Step 7:</b><br>
+If the user deletes the primary recipient on the email compose window, show a banner on the sidebar that informs the user to add back the contact or clear the template to go through a new flow again.<br>
+
+<b>Step 8:</b><br> Templates from Related Lists Dropdown<br>
+Add Template as an action item on the Related List item card (Example : Contact card drill down → Related Lists - Cases → Select a case - Show templates as an action item on the card). 
+1.	When clicked on the template icon, follow the same steps of choosing a recipient and then the template.
+2.	Pull up all the related objects that are required for the chosen template - there can be multiple related object fields for a template
+3.	Pre-fill all the required variable tags from the selected related list item. (For example - case , when chosen a template from here, since we have the case related info, pre-populate that over to the template where needed.)
+4.	Once the template is populated over to the compose window, if there is a variable tag that was not filled in automatically, inform the user with a banner similar to the one on the regular workflow.
+5.	If the user switches to a different primary recipient, show a banner saying “Variable tags only work for the recipient you have added before selecting a template. Please add back the recipient or choose a different recipient.“ 
+
+  </div>
                                 </p>
                                 <button class="btn btn-primary" data-dismiss="modal">
                                     <i class="fas fa-times fa-fw"></i>
