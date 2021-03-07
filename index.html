@@ -51,6 +51,10 @@
 #table.show tr > *:nth-child(2) {
     display: block;
 }
+
+.portfolio .portfolio-item {
+    height: 200px;
+    border: solid 3px #ececec;}
     </style>
 
     <script>
@@ -59,8 +63,8 @@
         $('#myModal').modal({backdrop: 'static', keyboard: false})  
 
 	});
-        document.addEventListener('contextmenu', function(e) {
-  e.preventDefault();
+         document.addEventListener('contextmenu', function(e) {
+   e.preventDefault();
 });
     </script>
 </head>
@@ -85,7 +89,7 @@
         
                     <div>
                         <br/>
-                        <input id="button" type="button" value="Submit" onclick="if (document.getElementById('password').value == '12345') { 
+                        <input id="button" type="button" value="Submit" onclick="if (document.getElementById('password').value == '1!2@3#4$5%') { 
         document.getElementById('table').classList.toggle('show');   
         document.getElementById('passw').style.display='none'; } 
         else {  alert('Invalid Password!'); password.setSelectionRange(0, password.value.length);   } " />
@@ -672,26 +676,188 @@ Add Template as an action item on the Related List item card (Example : Contact 
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true"><i class="fas fa-times"></i></span>
                 </button>
-                <div class="modal-body text-center">
+                <div class="modal-body">
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-lg-8">
+                            <div class="col-lg-10">
                                 <!-- Portfolio Modal - Title-->
                                 <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                                    id="portfolioModal2Label">Tasty Cake</h2>
+                                    id="portfolioModal1Label">Marketing Campaigns </h2>
                                 <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
+                                <!-- <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div> -->
                                 <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="" />
+                                <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/EmailTemplates.png" alt="" /> -->
                                 <!-- Portfolio Modal - Text-->
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
-                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                <p class="mb-5">
+                                <h3>What are we building?</h3>
+                               A framework for marketing and sales professionals to easily create and use lists, templates and start campaigns.</p>
+                                <p class="mb-5">
+                                <h3>Why are we building?</h3>
+                                Marketing and Sales representatives spend many hours in composing different templates targetted towards different segments or lists of users. This feature helps the users in understanding how the templates are performing and deciding which is the right template to be used for the right segment of users.
+                                
+                                To provide users and admins the ability to create, share, review and approve email templates.  
+                                To allow users to consume an email template from their email sidebar
+                                To allow the user to analyze their email sends and prioritize follow up
+
+
+
+
                                 </p>
+                                <p class="mb-5">
+                                <h3>Who are we building it for?</h3>
+                                Sales Representatives, Marketing Managers,Sales Ops, Marketing and Admins.  Anyone who has an interest in how customer email communications are authored, delivered or analyzed.    
+
+                            </p>
+
+                                <p class="mb-5">
+                                <h3>UX Workflow - MVP</h3>
+                                <!-- <h6>MVP</h6> -->
+                                <ul>
+                                    <li>View Lists and Create Lists</li>
+                                    <li>View and Create Templates</li>
+                                    <li>View and Create Sequences</li>
+                                </ul>
+                            
+                                </p>
+                                <div class="row">
+                                    <!-- Portfolio Item 1-->
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/marketingCampaigns/marketingCampaigns10.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/marketingCampaigns/marketingCampaigns1.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/marketingCampaigns/marketingCampaigns4.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10 col-lg-10 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/marketingCampaigns/marketingCampaigns3.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/marketingCampaigns/marketingCampaigns5.png" alt="" />
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <!-- <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Continue Reading</button> -->
+                                <p class="mb-5"><h3>Templates workflow</h3></p> 
+                                <div data-toggle="collapse" data-target="#marketingCampaignTemplate1" style="color: #1590e3; cursor: pointer;">View templates workflow <i class="fas fa-chevron-down"></i></div>
+                               
+                                <div id="marketingCampaignTemplate1" class="collapse">
+                                    <div class="row">
+                                        <!-- Portfolio Item 1-->
+                                        <div class="col-md-10 col-lg-10 mb-5">
+                                            <div class="portfolio-item mx-auto" >
+                                                <img class="img-fluid" src="assets/img/portfolio/marketingCampaigns/marketingCampaignTemplate1.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-10 col-lg-10 mb-5">
+                                            <div class="portfolio-item mx-auto" >
+                                                <img class="img-fluid" src="assets/img/portfolio/marketingCampaigns/marketingCampaignTemplate2.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-5">
+                                            <div class="portfolio-item mx-auto" >
+                                                <img class="img-fluid" src="assets/img/portfolio/marketingCampaigns/marketingCampaignTemplate3.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-10 col-lg-10 mb-5">
+                                            <div class="portfolio-item mx-auto" >
+                                                <img class="img-fluid" src="assets/img/portfolio/marketingCampaigns/marketingCampaignTemplate4.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-5">
+                                            <div class="portfolio-item mx-auto" >
+                                                <img class="img-fluid" src="assets/img/portfolio/marketingCampaigns/marketingCampaignTemplate5.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-5">
+                                            <div class="portfolio-item mx-auto" >
+                                                <img class="img-fluid" src="assets/img/portfolio/marketingCampaigns/marketingCampaignTemplate6.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-5">
+                                            <div class="portfolio-item mx-auto" >
+                                                <img class="img-fluid" src="assets/img/portfolio/marketingCampaigns/marketingCampaignTemplate7.png" alt="" />
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                </div>
+                                <p class="mb-5"><h3>Sequence workflow</h3></p> 
+                                <div data-toggle="collapse" data-target="#marketingCampaignSequence1" style="color: #1590e3; cursor: pointer;">View Sequence workflow <i class="fas fa-chevron-down"></i></div>
+                                <div id="marketingCampaignSequence1" class="collapse">
+                                    <div class="row">
+                                        <!-- Portfolio Item 1-->
+                                        <div class="col-md-6 col-lg-4 mb-5">
+                                            <div class="portfolio-item mx-auto" >
+                                                <img class="img-fluid" src="assets/img/portfolio/marketingCampaigns/marketingCampaignSequence1.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-5">
+                                            <div class="portfolio-item mx-auto" >
+                                                <img class="img-fluid" src="assets/img/portfolio/marketingCampaigns/marketingCampaignSequence2.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-5">
+                                            <div class="portfolio-item mx-auto" >
+                                                <img class="img-fluid" src="assets/img/portfolio/marketingCampaigns/marketingCampaignSequence3.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-10 col-lg-10 mb-5">
+                                            <div class="portfolio-item mx-auto" >
+                                                <img class="img-fluid" src="assets/img/portfolio/marketingCampaigns/marketingCampaignSequence4.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-5">
+                                            <div class="portfolio-item mx-auto" >
+                                                <img class="img-fluid" src="assets/img/portfolio/marketingCampaigns/marketingCampaignSequence5.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-5">
+                                            <div class="portfolio-item mx-auto" >
+                                                <img class="img-fluid" src="assets/img/portfolio/marketingCampaigns/marketingCampaignSequence6.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-5">
+                                            <div class="portfolio-item mx-auto" >
+                                                <img class="img-fluid" src="assets/img/portfolio/marketingCampaigns/marketingCampaignSequence7.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-5">
+                                            <div class="portfolio-item mx-auto" >
+                                                <img class="img-fluid" src="assets/img/portfolio/marketingCampaigns/marketingCampaignSequence8.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-5">
+                                            <div class="portfolio-item mx-auto" >
+                                                <img class="img-fluid" src="assets/img/portfolio/marketingCampaigns/marketingCampaignSequence9.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 mb-5">
+                                            <div class="portfolio-item mx-auto" >
+                                                <img class="img-fluid" src="assets/img/portfolio/marketingCampaigns/marketingCampaignSequence10.png" alt="" />
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                </div>
+<br>
                                 <button class="btn btn-primary" data-dismiss="modal">
                                     <i class="fas fa-times fa-fw"></i>
                                     Close Window
@@ -711,25 +877,115 @@ Add Template as an action item on the Related List item card (Example : Contact 
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true"><i class="fas fa-times"></i></span>
                 </button>
-                <div class="modal-body text-center">
+                <div class="modal-body">
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-lg-8">
+                            <div class="col-lg-10">
                                 <!-- Portfolio Modal - Title-->
                                 <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                                    id="portfolioModal3Label">Circus Tent</h2>
+                                    id="portfolioModal1Label">Reveal Prospects </h2>
                                 <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
+                                <!-- <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div> -->
                                 <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="" />
+                                <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/EmailTemplates.png" alt="" /> -->
                                 <!-- Portfolio Modal - Text-->
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
-                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                <p class="mb-5">
+                                <h3>What are we building?</h3>
+                               NDA agreements prevent me to publicly share but would be glad to walkthrough on a quick call. </p>
+                                <p class="mb-5">
+                                <h3>Why are we building?</h3>
+                                NDA agreements prevent me to publicly share but would be glad to walkthrough on a quick call.1 
+                                </p>
+                                <p class="mb-5">
+                                <h3>Who are we building it for?</h3>
+                                NDA agreements prevent me to publicly share but would be glad to walkthrough on a quick call. </p>
+
+                                <p class="mb-5">
+                                <h3>UX Workflow - MVP</h3>
+                                <!-- <h6>MVP</h6> -->
+                                NDA agreements prevent me to publicly share but would be glad to walkthrough on a quick call.
+                                </p>
+                                <div class="row justify-content-center">
+                                    <!-- Portfolio Item 1-->
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/revealProspects.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/revealProspects.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/revealProspects.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/revealProspects.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/revealProspects.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/revealProspects.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/revealProspects.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/revealProspects.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/revealProspects.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/revealProspects.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/revealProspects.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/revealProspects.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/revealProspects.png" alt="" />
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+
+                                <p class="mb-5">
+                                <!-- <h3>User Journey</h3> -->
+                                <!-- <div data-toggle="collapse" data-target="#demo" style="color: #1590e3; cursor: pointer;">I would like to know more about it</div> -->
+                                <!-- <h6>Enhanced or ideal version</h6> -->
+                                <!-- <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">I would like to know more about it</button> -->
+
                                 </p>
                                 <button class="btn btn-primary" data-dismiss="modal">
                                     <i class="fas fa-times fa-fw"></i>
@@ -750,25 +1006,115 @@ Add Template as an action item on the Related List item card (Example : Contact 
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true"><i class="fas fa-times"></i></span>
                 </button>
-                <div class="modal-body text-center">
+                <div class="modal-body">
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-lg-8">
+                            <div class="col-lg-10">
                                 <!-- Portfolio Modal - Title-->
                                 <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                                    id="portfolioModal4Label">Controller</h2>
+                                    id="portfolioModal1Label">Sales IQ </h2>
                                 <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
+                                <!-- <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div> -->
                                 <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="" />
+                                <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/EmailTemplates.png" alt="" /> -->
                                 <!-- Portfolio Modal - Text-->
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
-                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                <p class="mb-5">
+                                <h3>What are we building?</h3>
+                               NDA agreements prevent me to publicly share but would be glad to walkthrough on a quick call. </p>
+                                <p class="mb-5">
+                                <h3>Why are we building?</h3>
+                                NDA agreements prevent me to publicly share but would be glad to walkthrough on a quick call.1 
+                                </p>
+                                <p class="mb-5">
+                                <h3>Who are we building it for?</h3>
+                                NDA agreements prevent me to publicly share but would be glad to walkthrough on a quick call. </p>
+
+                                <p class="mb-5">
+                                <h3>UX Workflow - MVP</h3>
+                                <!-- <h6>MVP</h6> -->
+                                NDA agreements prevent me to publicly share but would be glad to walkthrough on a quick call.
+                                </p>
+                                <div class="row justify-content-center">
+                                    <!-- Portfolio Item 1-->
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/salesIQ.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/salesIQ.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/salesIQ.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/salesIQ.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/salesIQ.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/salesIQ.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/salesIQ.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/salesIQ.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/salesIQ.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/salesIQ.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/salesIQ.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/salesIQ.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/salesIQ.png" alt="" />
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+
+                                <p class="mb-5">
+                                <!-- <h3>User Journey</h3>
+                                <div data-toggle="collapse" data-target="#demo" style="color: #1590e3; cursor: pointer;">I would like to know more about it</div> -->
+                                <!-- <h6>Enhanced or ideal version</h6> -->
+                                <!-- <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">I would like to know more about it</button> -->
+
                                 </p>
                                 <button class="btn btn-primary" data-dismiss="modal">
                                     <i class="fas fa-times fa-fw"></i>
@@ -789,25 +1135,115 @@ Add Template as an action item on the Related List item card (Example : Contact 
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true"><i class="fas fa-times"></i></span>
                 </button>
-                <div class="modal-body text-center">
+                <div class="modal-body">
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-lg-8">
+                            <div class="col-lg-10">
                                 <!-- Portfolio Modal - Title-->
                                 <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                                    id="portfolioModal5Label">Locked Safe</h2>
+                                    id="portfolioModal1Label">User Adoption Analytics </h2>
                                 <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
+                                <!-- <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div> -->
                                 <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="" />
+                                <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/EmailTemplates.png" alt="" /> -->
                                 <!-- Portfolio Modal - Text-->
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
-                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                <p class="mb-5">
+                                <h3>What are we building?</h3>
+                               NDA agreements prevent me to publicly share but would be glad to walkthrough on a quick call. </p>
+                                <p class="mb-5">
+                                <h3>Why are we building?</h3>
+                                NDA agreements prevent me to publicly share but would be glad to walkthrough on a quick call.1 
+                                </p>
+                                <p class="mb-5">
+                                <h3>Who are we building it for?</h3>
+                                NDA agreements prevent me to publicly share but would be glad to walkthrough on a quick call. </p>
+
+                                <p class="mb-5">
+                                <h3>UX Workflow - MVP</h3>
+                                <!-- <h6>MVP</h6> -->
+                                NDA agreements prevent me to publicly share but would be glad to walkthrough on a quick call.
+                                </p>
+                                <div class="row justify-content-center">
+                                    <!-- Portfolio Item 1-->
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/userAdoption.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/userAdoption.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/userAdoption.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/userAdoption.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/userAdoption.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/userAdoption.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/userAdoption.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/userAdoption.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/userAdoption.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/userAdoption.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/userAdoption.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/userAdoption.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/userAdoption.png" alt="" />
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+
+                                <p class="mb-5">
+                                <!-- <h3>User Journey</h3>
+                                <div data-toggle="collapse" data-target="#demo" style="color: #1590e3; cursor: pointer;">I would like to know more about it</div> -->
+                                <!-- <h6>Enhanced or ideal version</h6> -->
+                                <!-- <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">I would like to know more about it</button> -->
+
                                 </p>
                                 <button class="btn btn-primary" data-dismiss="modal">
                                     <i class="fas fa-times fa-fw"></i>
@@ -828,25 +1264,115 @@ Add Template as an action item on the Related List item card (Example : Contact 
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true"><i class="fas fa-times"></i></span>
                 </button>
-                <div class="modal-body text-center">
+                <div class="modal-body">
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-lg-8">
+                            <div class="col-lg-10">
                                 <!-- Portfolio Modal - Title-->
                                 <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
-                                    id="portfolioModal6Label">Submarine</h2>
+                                    id="portfolioModal1Label">Calendar Scheduling </h2>
                                 <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
+                                <!-- <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div> -->
                                 <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="" />
+                                <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/EmailTemplates.png" alt="" /> -->
                                 <!-- Portfolio Modal - Text-->
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
-                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
-                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                <p class="mb-5">
+                                <h3>What are we building?</h3>
+                               NDA agreements prevent me to publicly share but would be glad to walkthrough on a quick call. </p>
+                                <p class="mb-5">
+                                <h3>Why are we building?</h3>
+                                NDA agreements prevent me to publicly share but would be glad to walkthrough on a quick call.1 
+                                </p>
+                                <p class="mb-5">
+                                <h3>Who are we building it for?</h3>
+                                NDA agreements prevent me to publicly share but would be glad to walkthrough on a quick call. </p>
+
+                                <p class="mb-5">
+                                <h3>UX Workflow - MVP</h3>
+                                <!-- <h6>MVP</h6> -->
+                                NDA agreements prevent me to publicly share but would be glad to walkthrough on a quick call.
+                                </p>
+                                <div class="row justify-content-center">
+                                    <!-- Portfolio Item 1-->
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/calendarBooking.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/calendarScheduling.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/calendarScheduling.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/calendarScheduling.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/calendarScheduling.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/calendarScheduling.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/calendarScheduling.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/calendarScheduling.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/calendarScheduling.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/calendarScheduling.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/calendarScheduling.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/calendarScheduling.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto" >
+                                            <img class="img-fluid" src="assets/img/portfolio/emailTemplates/calendarScheduling.png" alt="" />
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+
+                                <p class="mb-5">
+                                <!-- <h3>User Journey</h3>
+                                <div data-toggle="collapse" data-target="#demo" style="color: #1590e3; cursor: pointer;">I would like to know more about it</div> -->
+                                <!-- <h6>Enhanced or ideal version</h6> -->
+                                <!-- <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">I would like to know more about it</button> -->
+
                                 </p>
                                 <button class="btn btn-primary" data-dismiss="modal">
                                     <i class="fas fa-times fa-fw"></i>
