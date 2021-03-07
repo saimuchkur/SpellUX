@@ -66,6 +66,8 @@
          document.addEventListener('contextmenu', function(e) {
    e.preventDefault();
 });
+
+
     </script>
 </head>
 
@@ -75,7 +77,7 @@
           <div class="modal-content">
             <div class="modal-header">
             </div>
-            <div class="modal-body">
+            <div class="modal-body" style="padding:0px 20px">
                 <div id="passw">
                     <div>
                         <br />
@@ -100,8 +102,14 @@
         
         <table id="table">
             <tr> 
-                <td></td>
-                <td id="HIDDENDIV" ><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></td>
+                <td style="display: none;"></td>
+                <td id="HIDDENDIV" >
+                    <video id="video1" style="width: 100%; border-radius: 10px;" controls>
+                    <source src="assets/img/sai.MOV.mp4" type="video/mp4">
+                    <source src="assets/img/sai.MOV.mp4" type="video/ogg">
+                    Your browser does not support HTML video.
+                  </video>
+                  <button type="button" class="btn btn-default" data-dismiss="modal" onclick="playPause()">Close<i class="fas fa-times fa-fw"></i></button> </td>
             </tr>
         </table>
         <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
@@ -141,6 +149,8 @@
         <div class="container d-flex align-items-center flex-column">
             <!-- Masthead Avatar Image-->
             <img class="masthead-avatar mb-5" src="assets/img/avataaars.jpeg" alt="" / style="border-radius: 100%">
+            <code data-toggle="modal" data-target="#videoModal" style="cursor:pointer; padding: 5px 10px;
+            background-color: #e83e8c;border-radius: 5px;color: #fff;">Play Introduction video <i class="fas fa-play"></i></code><br>
             <!-- Masthead Heading-->
             <h1 class="masthead-heading text-uppercase mb-0">Sai Shekar</h1>
             <!-- Icon Divider-->
@@ -658,6 +668,36 @@ Add Template as an action item on the Related List item card (Example : Contact 
   </div>
                                 </p>
                                 <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="videoModal" tabindex="-1" role="dialog"
+        aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                                    id="portfolioModal1Label">Introduction Video</h2><br>
+                                    <video id="video2" style="width: 100%; border-radius: 10px;" controls>
+                                        <source src="assets/img/sai.MOV.mp4" type="video/mp4">
+                                        <source src="assets/img/sai.MOV.mp4" type="video/ogg">
+                                        Your browser does not support HTML video.
+                                      </video> 
+                                      <button class="btn btn-primary" onclick="playPause1()" data-dismiss="modal" >
                                     <i class="fas fa-times fa-fw"></i>
                                     Close Window
                                 </button>
@@ -1395,6 +1435,21 @@ Add Template as an action item on the Related List item card (Example : Contact 
     <script src="assets/mail/contact_me.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script>
+        var myVideo = document.getElementById("video1"); 
+        var myVideo1 = document.getElementById("video2"); 
+
+function playPause() { 
+ 
+   myVideo.pause();
+    
+} 
+function playPause1() { 
+ 
+ myVideo1.pause();
+  
+} 
+    </script>
 </body>
 
 </html>
