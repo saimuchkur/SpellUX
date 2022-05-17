@@ -10238,3 +10238,49 @@ form .row:first-child .floating-label-form-group {
 .copyright {
   background-color: #1a252f;
 }
+
+
+.more_projects {
+  margin: 50px 0 0;
+  text-align: center;
+}
+
+.more_projects button {
+  color: #fff;
+  background: #1abc9c;
+  border-radius: 0.5rem !important;
+  border: 0;
+  padding: 15px;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+    outline: 0;
+}
+
+nav .more_projects_show {
+  color: #fff;
+  background: #1abc9c;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.portfolio .portfolio-item {
+  height: 200px;
+  border: solid 3px #ececec;
+}
+
+.more_projects_hide.show {
+  display: block;
+}
+.more_projects_hide.hide {
+  display: none;
+}
+.more_projects_show.hide {
+  display: none;
+}
+.more_projects_show.show {
+  display: block;
+}
+.navbar + .hide + #portfolio {
+  padding: 12rem 0 6rem;
+}
