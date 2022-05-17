@@ -19,7 +19,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" /> -->
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-43MLEL42GE"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -28,7 +28,7 @@
 
   gtag('config', 'G-43MLEL42GE');
 </script>
-	
+    
     <style>
         body {
             font-family: 'Poppins';
@@ -68,11 +68,11 @@
     </style>
 
     <script>
-	$(document).ready(function(){
-		// $("#myModal").modal('show');
+    $(document).ready(function(){
+        // $("#myModal").modal('show');
         $('#myModal').modal({backdrop: 'static', keyboard: false})  
 
-	});
+    });
          document.addEventListener('contextmenu', function(e) {
    e.preventDefault();
 });
@@ -144,18 +144,19 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                    <li class="nav-item mx-0 mx-lg-1 more_projects_hide"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                             href="#portfolio">Projects</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                    <li class="nav-item mx-0 mx-lg-1 more_projects_hide"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                             href="#about">About Me</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                    <li class="nav-item mx-0 mx-lg-1 more_projects_hide"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
                             href="#contact">UX Process</a></li>
                 </ul>
             </div>
+            <div class="more_projects_show hide"><i class="fas fa-home"></i> Home</div>
         </div>
     </nav>
     <!-- Masthead-->
-    <header class="masthead bg-primary text-white text-center">
+    <header class="masthead bg-primary text-white text-center more_projects_hide">
         <div class="container d-flex align-items-center flex-column">
             <!-- Masthead Avatar Image-->
             <img class="masthead-avatar mb-5" src="assets/img/avataaars.jpeg" alt="" / style="border-radius: 100%">
@@ -223,7 +224,7 @@
                     </div>
                 </div>
                 <!-- Portfolio Item 4-->
-                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                <div class="col-md-6 col-lg-4 mb-5">
                     <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
                         <div
                             class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -233,7 +234,7 @@
                     </div>
                 </div>
                 <!-- Portfolio Item 5-->
-                <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                <div class="col-md-6 col-lg-4 mb-5">
                     <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
                         <div
                             class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -252,11 +253,25 @@
                         <img class="img-fluid" src="assets/img/portfolio/calendarBooking.png" alt="" />
                     </div>
                 </div>
+                <!-- Portfolio Item 7 tesssssssssssst-->
+                <!-- <div class="col-md-6 col-lg-4 more_projects_hide hide">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">Calendar Scheduling</div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/calendarBooking.png" alt="" />
+                    </div>
+                </div> -->
             </div>
+            <div class="more_projects more_projects_hide">
+                <button>More Projects</button>
+            </div>
+            
         </div>
     </section>
     <!-- About Section-->
-    <section class="page-section bg-primary text-white mb-0" id="about" style="background-color: #000f59;">
+    <section class="page-section bg-primary text-white mb-0 more_projects_hide" id="about" style="background-color: #000f59;">
         <div class="container">
             <!-- About Section Heading-->
             <h2 class="page-section-heading text-center text-uppercase text-white">About Me</h2>
@@ -369,7 +384,7 @@
                 </p>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="assets/img/Sai_UXDesign.docx">
+                    <a class="btn btn-xl btn-outline-light" href="assets/img/Sai_UX_051222.docx">
                         <i class="fas fa-download mr-2"></i>
                         Download Resume
                     </a>
@@ -380,7 +395,7 @@
 
     </section>
     <!-- Contact Section-->
-    <section class="page-section" id="contact">
+    <section class="page-section more_projects_hide" id="contact">
         <div class="container">
             <!-- Contact Section Heading-->
             <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">UX Process</h2>
@@ -658,7 +673,7 @@
 As a user, on an outbound email I would like to use a Salesforce template which should be available through my Zynbit sidebar and when consumed should be populated to my email compose window with the subject and ready to send mode.<br>
 <b>Step 2:</b><br>
 Once my sidebar is loaded with all the recipients from the email, I choose a template.<br>
-1.	The user should be able to see five templates on the dropdown, with an option to view all.
+1.  The user should be able to see five templates on the dropdown, with an option to view all.
 *The most recent used template should be the default selected template for the next use.<br>
 <code>Condition 1:</code> If the selected email doesn't have any required related objects or variable tags to be selected, we populate the template on to the compose window and the user should be able to send the consumed template right away <br>
 <code>Condition 2:</code> If the selected template has related objects associated that need to be filled in, we load the primary recipient dropdown and related objects lookup. <br>
@@ -669,13 +684,13 @@ Select template → Show the related object fields that are related to the selec
 <b>Step 5:</b><br> if step 2, condition 2<br> 
 Once the primary contact from the recipients list (first contact on the recipient list on the email should be preselected by default) and the template is selected, click on apply button to publish the template to the compose window on the respected email client.
 Note: All the variable tags should be pre-filled where applicable.<br>
-1.	Known contact - if we already have that contact on SF, we should be able to get all the info about that contact and apply it to the variable tags where applicable.<br>
-2.	Unknown contact - Pre-populate will all the fields that are available with us like, the First name, last name, email etc…<br>
-3.	When we copy over the template to the compose window, places where we are not able to populate the variable tags add the variable tag syntax that comes from SF like {{{First_Name}}}<br>
+1.  Known contact - if we already have that contact on SF, we should be able to get all the info about that contact and apply it to the variable tags where applicable.<br>
+2.  Unknown contact - Pre-populate will all the fields that are available with us like, the First name, last name, email etc…<br>
+3.  When we copy over the template to the compose window, places where we are not able to populate the variable tags add the variable tag syntax that comes from SF like {{{First_Name}}}<br>
 Example : Hi, Sai Muchkur (when we can populate the variable tag) 
 else Hi, {{{First_Name}}} so that the users attention would be grabbed to that part of the template and can fill in manually. - 
 good to have - make the variable tag bold
-4.	Show a banner as shown in the uxpin prototype to tell the user that there might be few variable tags that should be filled in before they send the email - this is just a visual reminder kind of a thing that helps the user in not sending the email before filling in the not populated variable tags.<br>
+4.  Show a banner as shown in the uxpin prototype to tell the user that there might be few variable tags that should be filled in before they send the email - this is just a visual reminder kind of a thing that helps the user in not sending the email before filling in the not populated variable tags.<br>
 <b>Step 6:</b><br>
 Check the email options to track the email or links before we push the template.
 *Condition: If there is a link inserted on the template, open the click links text field to name the link before pushing the template to the compose window.
@@ -685,11 +700,11 @@ If the user deletes the primary recipient on the email compose window, show a ba
 
 <b>Step 8:</b><br> Templates from Related Lists Dropdown<br>
 Add Template as an action item on the Related List item card (Example : Contact card drill down → Related Lists - Cases → Select a case - Show templates as an action item on the card). 
-1.	When clicked on the template icon, follow the same steps of choosing a recipient and then the template.
-2.	Pull up all the related objects that are required for the chosen template - there can be multiple related object fields for a template
-3.	Pre-fill all the required variable tags from the selected related list item. (For example - case , when chosen a template from here, since we have the case related info, pre-populate that over to the template where needed.)
-4.	Once the template is populated over to the compose window, if there is a variable tag that was not filled in automatically, inform the user with a banner similar to the one on the regular workflow.
-5.	If the user switches to a different primary recipient, show a banner saying “Variable tags only work for the recipient you have added before selecting a template. Please add back the recipient or choose a different recipient.“ 
+1.  When clicked on the template icon, follow the same steps of choosing a recipient and then the template.
+2.  Pull up all the related objects that are required for the chosen template - there can be multiple related object fields for a template
+3.  Pre-fill all the required variable tags from the selected related list item. (For example - case , when chosen a template from here, since we have the case related info, pre-populate that over to the template where needed.)
+4.  Once the template is populated over to the compose window, if there is a variable tag that was not filled in automatically, inform the user with a banner similar to the one on the regular workflow.
+5.  If the user switches to a different primary recipient, show a banner saying “Variable tags only work for the recipient you have added before selecting a template. Please add back the recipient or choose a different recipient.“ 
 
   </div>
                                 </p>
@@ -960,8 +975,8 @@ Add Template as an action item on the Related List item card (Example : Contact 
                                 <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/EmailTemplates.png" alt="" /> -->
                                 <!-- Portfolio Modal - Text-->
                                 <p class="mb-5">
-<a href="https://www.figma.com/file/X2ImbpUsSymGgVzOvx1DJa/Prospect-Reveal?node-id=0%3A1">View Analytics Prototype</a>
-                               
+                                    <a href="https://www.figma.com/file/X2ImbpUsSymGgVzOvx1DJa/Prospect-Reveal?node-id=0%3A1">View Analytics Prototype</a>
+
                                 <h3>What are we building?</h3>
                                Portfolio is under construction. Please contact me on email or schedule a meeting if interested to learn more. </p>
                                 <p class="mb-5">
@@ -1220,7 +1235,7 @@ Add Template as an action item on the Related List item card (Example : Contact 
                                 <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/EmailTemplates.png" alt="" /> -->
                                 <!-- Portfolio Modal - Text-->
                                 <p class="mb-5">
-					<a href="https://www.figma.com/proto/MV3UzVZbHJ0zrIl5WJ9AqT/Buyer-Signals-Analytics?page-id=139%3A2163&node-id=139%3A2163&viewport=241%2C48%2C0.4&scaling=contain&starting-point-node-id=571%3A95&show-proto-sidebar=1">View Analytics Prototype</a>
+                                    <a href="https://www.figma.com/proto/MV3UzVZbHJ0zrIl5WJ9AqT/Buyer-Signals-Analytics?page-id=139%3A2163&node-id=139%3A2163&viewport=241%2C48%2C0.4&scaling=contain&starting-point-node-id=571%3A95&show-proto-sidebar=1">View Analytics Prototype</a>
                                 <h3>What are we building?</h3>
                                Portfolio is under construction. Please contact me on email or schedule a meeting if interested to learn more. </p>
                                 <p class="mb-5">
@@ -1365,7 +1380,7 @@ Add Template as an action item on the Related List item card (Example : Contact 
                                 <h3>UX Workflow - MVP</h3>
                                 <!-- <h6>MVP</h6> -->
                                 Portfolio is under construction. Please contact me on email or schedule a meeting if interested to learn more.
-
+                                
                                 </p>
                                 <div class="row justify-content-center">
                                     <!-- Portfolio Item 1-->
