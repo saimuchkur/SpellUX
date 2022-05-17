@@ -3,7 +3,7 @@
     * Copyright 2013-2020 Start Bootstrap
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
     */
-    (function($) {
+   (function($) {
     "use strict"; // Start of use strict
   
     // Smooth scrolling using jQuery easing
@@ -34,7 +34,12 @@
     $('.js-scroll-trigger').click(function() {
       $('.navbar-collapse').collapse('hide');
     });
-  
+
+    $('.more_projects').click(function() {
+      $(".more_projects_hide").toggleClass("hide");
+      $(".more_projects_show").toggleClass("show");
+    });
+
     // Activate scrollspy to add active class to navbar items on scroll
     $('body').scrollspy({
       target: '#mainNav',
@@ -63,6 +68,11 @@
       }).on("blur", ".floating-label-form-group", function() {
         $(this).removeClass("floating-label-form-group-with-focus");
       });
+    });
+
+    $('.more_projects_show').bind( "click", function() {
+      $(".more_projects_hide").toggleClass("hide");
+      $(".more_projects_show").toggleClass("show");
     });
   
   })(jQuery); // End of use strict
